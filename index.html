@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lipa Track - Smart Business Management</title>
+    <meta name="description" content="Lipa Track helps small business owners manage customer payments, track debts, and grow their business efficiently.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Lipa Track</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#download" class="download-btn">Download</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Lipa Track</span><br>
+                    Smart Business Management
+                </h1>
+                <p class="hero-description">
+                    Transform your small business with our powerful customer payment tracking app. 
+                    Manage debts, send reminders, and grow your business efficiently.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="startDownload()">
+                        <i class="fas fa-download"></i>
+                        Download APK
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToFeatures()">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Customers Tracked</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="app-header">
+                                <div class="status-bar"></div>
+                                <div class="app-title">Lipa Track</div>
+                            </div>
+                            <div class="app-content">
+                                <div class="customer-card">
+                                    <div class="customer-avatar">👤</div>
+                                    <div class="customer-info">
+                                        <h4>John Doe</h4>
+                                        <p>0712345678</p>
+                                        <span class="amount">TSH 50,000</span>
+                                    </div>
+                                </div>
+                                <div class="customer-card">
+                                    <div class="customer-avatar">👤</div>
+                                    <div class="customer-info">
+                                        <h4>Jane Smith</h4>
+                                        <p>0756789012</p>
+                                        <span class="amount">TSH 25,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need to manage your business efficiently</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Customer Management</h3>
+                    <p>Add, edit, and organize your customers with detailed information including contact details and payment history.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Payment Tracking</h3>
+                    <p>Track payments, debts, and remaining balances with real-time calculations and status indicators.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Deadline Management</h3>
+                    <p>Set payment deadlines and get visual indicators for overdue customers to stay on top of collections.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Cloud Backup</h3>
+                    <p>Automatically backup your data to Google Sheets with smart sync and conflict resolution.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-export"></i>
+                    </div>
+                    <h3>Export Reports</h3>
+                    <p>Generate professional PDF reports of your customer data for accounting and record keeping.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sms"></i>
+                    </div>
+                    <h3>SMS Integration</h3>
+                    <p>Send payment reminders directly to customers via SMS with customizable messages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Features -->
+    <section class="coming-soon">
+        <div class="container">
+            <div class="section-header">
+                <h2>Coming Soon</h2>
+                <p>Exciting new features to make your business even better</p>
+            </div>
+            <div class="coming-features">
+                <div class="coming-feature">
+                    <div class="coming-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Bulk SMS</h3>
+                    <p>Send payment reminders to multiple customers at once with personalized messages.</p>
+                    <span class="badge">Coming Soon</span>
+                </div>
+                <div class="coming-feature">
+                    <div class="coming-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>User Separation</h3>
+                    <p>Multiple user accounts with role-based access for team management.</p>
+                    <span class="badge">In Development</span>
+                </div>
+                <div class="coming-feature">
+                    <div class="coming-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Detailed business analytics and insights to help you make informed decisions.</p>
+                    <span class="badge">Planned</span>
+                </div>
+                <div class="coming-feature">
+                    <div class="coming-icon">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <h3>QR Code Payments</h3>
+                    <p>Generate QR codes for easy payment collection and tracking.</p>
+                    <span class="badge">Planned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About the Developer</h2>
+                    <p>Lipa Track was developed by <strong>Mujeeb Abdul</strong>, a passionate software developer dedicated to helping small business owners succeed.</p>
+                    <p>With years of experience in mobile app development and a deep understanding of business challenges, Mujeeb created Lipa Track to solve real-world problems faced by entrepreneurs.</p>
+                    <div class="developer-info">
+                        <div class="developer-card">
+                            <div class="developer-avatar">
+                                <!-- <i class="fas fa-user"></i> -->
+                                <img src="./images/dev.jpg" style="width: 60px; height: 60px; border-radius: 30px;" alt="">
+                            </div>
+                            <div class="developer-details">
+                                <h4>Mujeeb Abdul</h4>
+                                <p>Mobile App Developer</p>
+                                <div class="social-links">
+                                    <a href="mailto:youngbary0162@gmail.com"><i class="fas fa-envelope"></i></a>
+                                    <a href="#"><i class="fas fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="developer-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Download Lipa Track</h2>
+                <p>Get started with Lipa Track today and transform your business management</p>
+                <div class="download-options">
+                    <button class="download-btn-main" onclick="startDownload()">
+                        <i class="fas fa-download"></i>
+                        <span>Download APK</span>
+                        <small>Version 1.0.0</small>
+                    </button>
+                </div>
+                <div class="download-info">
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% Safe & Secure</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Android 5.0+</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-download"></i>
+                        <span>Free Download</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Lipa Track</span>
+                    </div>
+                    <p>Empowering small businesses with smart payment tracking solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> youngbary0162@gmail.com</p>
+                    <p><i class="fas fa-user"></i> Mujeeb Abdul</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lipa Track. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Downloading Lipa Track</h3>
+                <span class="close" onclick="closeDownloadModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="download-animation">
+                    <div class="phone-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="download-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="progress-text" id="progressText">Preparing download...</div>
+                    </div>
+                </div>
+                <div class="download-steps">
+                    <div class="step active" id="step1">
+                        <i class="fas fa-check"></i>
+                        <span>Preparing APK</span>
+                    </div>
+                    <div class="step" id="step2">
+                        <i class="fas fa-download"></i>
+                        <span>Downloading</span>
+                    </div>
+                    <div class="step" id="step3">
+                        <i class="fas fa-install"></i>
+                        <span>Ready to Install</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
